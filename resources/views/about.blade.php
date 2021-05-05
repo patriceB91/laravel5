@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('app')
 
-    </head>
-    <body class="antialiased">
+
+@section('title', 'Hello city | ' . config('app.name') )
+
+@section('content')
+
+        <img src="{{ asset('/images/ibm.jpg') }} " alt="Drapeu Français">
 
         <p> Build by PB </p>
 
-
         <a href="/" class="ml-1 underline">Retour acceuil </a>
 
-        </div>
-    </body>
-</html>
+@endsection
