@@ -21,14 +21,14 @@
         </style>
     </head>
     <body class="py-6 flex flex-col justify-between items-center min-h-screen">
-            <main role="main" class="flex flex-col justify-center items-center" >
-             @yield('content')
-            </main>
-        <footer>
-                <p class="text-gray-400">
-                    &copy; Copywrite {{ date('Y') }}
-                    &middot; <a href="/about" class="text-indigo-500 hover:text-indigo-600 underline"> About us </a>
-                </p>
-        </footer>
+
+        <main role="main" class="flex flex-col justify-center items-center" >
+            @yield('content')
+        </main>
+        @include('partials._footer')
+
+
+
+
     </body>
 </html>
