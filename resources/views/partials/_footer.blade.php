@@ -5,5 +5,7 @@
         @if(!   Route::is('about')) 
           &middot; <a href="/about" class="text-indigo-500 hover:text-indigo-600 underline"> About us </a>
         @endif
+
+        &nbsp; <a href="/help" class="text-indigo-500 hover:text-indigo-600 underline"> Help </a>
     </p>
 </footer>
