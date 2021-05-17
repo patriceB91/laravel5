@@ -220,16 +220,19 @@ $(document).ready(function() {
 
     /**
      * Upload the file or url
+     * @Depends on global var allowedFilesTypes 
      */
     $(".upload-file").click(function(e){
-        // Need to get this dynamic way....
-        var re = /(\.jpg|\.jpeg|\.bmp|\.gif|\.png|\.ppt|\.pptx|\.avi|\.mp4|\.pdf)$/i;
 
         e.preventDefault();
 
         var fileselTbl = $('#filetable').DataTable()
         var fd = new FormData();
+
         var files = $('#file')[0].files;
+        // var fileName = $('#file').val()
+        var fSplit = $('#file').val().split('.')
+        var extension = fSplit[fSplit.length - 1].toLowerCase()
 
         var errMsg = ''
         // Check if only one of the 2 fields is set
@@ -243,8 +246,8 @@ $(document).ready(function() {
                 console.log($('#url').val())
                 errMsg += "L'URL doit commencer par http\n"
             }
-            // Si le nom de fichier 
-            if($('#file').val() && !re.exec($('#file').val().toLowerCase())) {
+
+            if(!allowedFilesTypes.includes(extension)) { 
                 errMsg += 'Attention, le type de fichier est invalide.\n'
             } 
         }

@@ -11,6 +11,8 @@ This should be the base for future devs.
 The project is to be run on any Web server, as soon as Laravel requirements are set.
 The initial installation will be done on a Synology NAS. Thus the installation process is given for that environment.
 
+https://laravel.com/docs/7.x/installation#server-requirements
+
 ## Composer Install 
 
 I simply followed the proceditre given here : https://aradaff.com/composer-sur-dsm-synology/
@@ -104,3 +106,10 @@ Typically on the following dirs :
 sudo chmod 755 -R kiosksadmin
 ````
 
+# Biblio
+
+https://oshara.ca/fr/blog/comment-installer-une-application-web-laravel-que-vous-avez-clone-depuis-git
+
+https://community.synology.com/enu/forum/1/post/133463
+
+https://tech.setepontos.com/2017/05/21/installing-php-composer-on-a-synology-nas/
