@@ -28,7 +28,7 @@
             */
         </style>
         <script>    
-            var allowedFilesTypes = {!! json_encode(explode(',', env('PBS_MIMES')), JSON_HEX_TAG) !!};    
+            var allowedFilesTypes = {!! json_encode(explode(',', env('PBS_MIMES')), JSON_HEX_TAG) !!}
         </script>
 
         <style>
