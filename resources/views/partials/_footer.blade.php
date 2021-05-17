@@ -7,5 +7,7 @@
         @endif
 
         &nbsp; <a href="/help" class="text-indigo-500 hover:text-indigo-600 underline"> Help </a>
+        &nbsp; <a href="/file-upload" class="text-indigo-500 hover:text-indigo-600 underline"> File Upload </a>
     </p>
+    <p> Construit avec laravel 8 - By PB Services </p>
 </footer>

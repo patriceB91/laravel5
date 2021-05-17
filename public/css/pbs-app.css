@@ -1,0 +1,34 @@
+.validate-butt {
+    padding-top: 20px;
+}
+
+.button-clr {
+    position: absolute;
+    top: 0;
+    /* border-radius: 5px; */
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 2px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    /*background-color: #1e90ff;*/
+    transform: translateX(-17px);
+}
+
+.msgarea {
+    display: grid;
+    margin: auto;
+}
+
+/*
+.pbs-center {
+    margin: auto;
+    position: relative;
+   /* top: 50%;
+    left: 50%; */
+   /* -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+  }
+*/
