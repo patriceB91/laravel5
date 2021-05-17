@@ -27,6 +27,7 @@ class FileUploadController extends Controller
     public function getFileListV2() {
         $files= scandir(public_path('kiosks'));
         $urlList = $this->readUrls();
+        $allowedFileExt = explode(',', env("PBS_MIMES"));
 
         $id = 1;
         $fileList = array();
@@ -49,8 +50,9 @@ class FileUploadController extends Controller
         // Build data records & give selected files 
         foreach($files as $key => $value) {
             $row = array();
+            $fext = pathinfo($value, PATHINFO_EXTENSION);
             $isSelected = in_array($value, $selFiles) ? "checked" : "";
-            if($value!='.' && $value != '..') {
+            if($value!='.' && $value != '..' && in_array($fext, $allowedFileExt)) {
                 $row = array('id' => $id, 'filename' => $value, 'ftype' => 'file', 'selected' => $isSelected);
                 foreach($kioskCols as $key => $colID) {
                     $row[$colID] = $colID;
