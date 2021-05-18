@@ -7,8 +7,8 @@
 
 @section('content')
 
-    <div class="panel rounded-3xl panel-primary bg-blue-100 p-8">
-      <div class="panel-heading"><h2>Gestion des fichiers Kiosk</h2></div>
+    <div class="panel rounded-3xl panel-primary bg-gradient-to-br from-blue-400 to-cyan-500 p-8">
+      <div class="panel-heading text-center"><h2>Gestion des fichiers Kiosk</h2></div>
       <div class="panel-body">
    
         @if ($message = Session::get('success'))
@@ -39,7 +39,7 @@
                     <button id="clearFileButton" class="button-clr uppercase px-8 py-2 rounded-full bg-yellow-500 text-blue-50 max-w-max shadow-sm hover:shadow-lg"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div class="col-md-8 pl-4">
+                <div class="col-md-8 pl-4 pt-6">
                     <input id="url" type="text" name="url" class="form-control rounded-lg" placeholder="Or an url  (http://...)">
                 </div>
    
@@ -47,7 +47,7 @@
                     <button class="uppercase px-8 py-2 rounded-full bg-green-600 text-blue-50 max-w-max shadow-sm hover:shadow-lg upload-file">Envoyer</button>
                 </div>
 
-                <div class="validate-butt col-md-12 content-center ">
+                <div class="validate-butt col-md-12 text-center ">
                     <button class="uppercase px-8 py-2 rounded-full bg-green-200 text-blue-50 max-w-max shadow-sm hover:shadow-lg save-changes pbs-center">Valider la nouvelle selection du tableau</button>
                 </div>
    

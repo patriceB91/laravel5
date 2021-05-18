@@ -271,7 +271,7 @@ class FileUploadController extends Controller
             }
         }
         
-        var_dump($newContent);
+        // var_dump($newContent);
         if (file_put_contents($urlFile, $newContent)) {
             echo("File written");
         }
