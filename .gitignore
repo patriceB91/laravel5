@@ -1,5 +1,5 @@
 /node_modules
-/public/hot
+/public/kiosks
 /public/storage
 /storage/*.key
 /vendor
@@ -13,3 +13,4 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 @eaDir
+*.params
