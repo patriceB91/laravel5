@@ -235,7 +235,7 @@ class FileUploadController extends Controller
             if ($handle) {
                 while (($line = fgets($handle, 4096)) !== false) {
                     if(trim($line) != '') {
-                        array_push($urlList,$line);
+                        array_push($urlList,trim($line));
                     }
                 }
                 if (!feof($handle)) {

@@ -7,7 +7,7 @@
 
 @section('content')
 
-    <div class="panel panel-primary bg-blue-100 p-8">
+    <div class="panel rounded-3xl panel-primary bg-blue-100 p-8">
       <div class="panel-heading"><h2>Gestion des fichiers Kiosk</h2></div>
       <div class="panel-body">
    
